@@ -1,0 +1,36 @@
+:root {
+	--clr-red: hsl(7, 99%, 70%);
+	--clr-yellow: hsl(51, 100%, 49%);
+	--clr-cyan-graphic: hsl(167, 40%, 24%);
+	--clr-cyan-footer: hsl(198, 62%, 26%);
+	--clr-blue-photography: hsl(198, 62%, 26%);
+	--clr-blue-des: hsl(212, 27%, 19%);
+	--clr-blue-grayish-1: hsl(210, 4%, 67%);
+	--clr-blue-grayish-2: hsl(232, 10%, 55%);
+	--clr-blue-grayish-3: hsl(213, 9%, 39%);
+	--clr-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header {
+	background: url('./images/mobile/image-header.jpg')
+}
