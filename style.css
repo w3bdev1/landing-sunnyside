@@ -19,6 +19,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	font-family: sans-serif;
+}
+
 img {
 	max-width: 100%;
 }
@@ -31,6 +35,37 @@ a {
 	text-decoration: none;
 }
 
-.header {
-	background: url('./images/mobile/image-header.jpg')
+header {
+	background: url('./images/mobile/image-header.jpg');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 2rem 1rem;
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hamburger {
+	background: transparent;
+	border: none;
+}
+
+.nav-header {
+	display: none;
+}
+
+.hero-text {
+	text-transform: uppercase;
+	color: var(--clr-white);
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
 }
