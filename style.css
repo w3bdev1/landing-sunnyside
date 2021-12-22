@@ -21,6 +21,7 @@
 
 body {
 	font-family: Barlow, sans-serif;
+	font-weight: 600;
 }
 
 img {
@@ -33,6 +34,10 @@ ul {
 
 a {
 	text-decoration: none;
+}
+
+h1 {
+	font-family: Fraunces, serif;
 }
 
 header {
@@ -89,7 +94,6 @@ header {
 
 .feature-content--para {
 	color: var(--clr-blue-grayish-2);
-	font-weight: 600;
 }
 
 .link-yellow,
@@ -116,4 +120,32 @@ header {
 
 .link-yellow::before {
 	background-color: var(--clr-yellow);
+}
+
+.services {
+	margin-top: 1rem;
+}
+.service {
+	height: 90vh;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 2rem;
+	padding: 2rem 1rem;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.service--graphic {
+	background-image: url(./images/mobile/image-graphic-design.jpg);
+	color: var(--clr-cyan-graphic);
+}
+
+.service--photography {
+	background-image: url(./images/mobile/image-photography.jpg);
+	color: var(--clr-blue-photography);
 }
