@@ -66,6 +66,8 @@ header {
 	text-transform: uppercase;
 	color: var(--clr-white);
 	text-align: center;
-	font-size: 2rem;
-	font-weight: 700;
+	font-size: 1.5rem;
+	font-weight: 900;
+	font-family: Fraunces, serif;
+	letter-spacing: .1em;
 }
