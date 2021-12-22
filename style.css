@@ -20,7 +20,7 @@
 }
 
 body {
-	font-family: sans-serif;
+	font-family: Barlow, sans-serif;
 }
 
 img {
@@ -56,6 +56,7 @@ header {
 .hamburger {
 	background: transparent;
 	border: none;
+	cursor: pointer;
 }
 
 .nav-header {
@@ -70,4 +71,49 @@ header {
 	font-weight: 900;
 	font-family: Fraunces, serif;
 	letter-spacing: .1em;
+}
+
+.feature-content {
+	display: grid;
+	gap: 1rem;
+	padding: 2rem;
+	text-align: center;
+}
+
+.feature-content--heading,
+.feature-content--link {
+	font-family: Fraunces, serif;
+	font-weight: 900;
+	color: var(--clr-blue-des);
+}
+
+.feature-content--para {
+	color: var(--clr-blue-grayish-2);
+	font-weight: 600;
+}
+
+.link-yellow,
+.link-red {
+	position: relative;
+}
+
+.link-yellow::before,
+.link-red::before {
+	position: absolute;
+	content: '';
+	bottom: -10%;
+	top: 60%;
+	left: 20%;
+	right: 20%;
+	z-index: -1;
+	border-radius: 20% 40%;
+	opacity: 30%;
+}
+
+.link-red::before {
+	background-color: var(--clr-red);
+}
+
+.link-yellow::before {
+	background-color: var(--clr-yellow);
 }
