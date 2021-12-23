@@ -11,7 +11,6 @@
 	--clr-blue-grayish-1: hsl(210, 4%, 67%);
 	--clr-blue-grayish-2: hsl(232, 10%, 55%);
 	--clr-blue-grayish-3: hsl(213, 9%, 39%);
-	--clr-white: hsl(0, 0%, 100%);
 }
 
 *,
@@ -55,7 +54,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 2rem 1rem;
-	height: 70vh;
+	height: 90vh;
 	display: flex;
 	flex-direction: column;
 	gap: 4rem;
@@ -63,7 +62,7 @@ header {
 
 header,
 header button {
-	color: var(--clr-white);
+	color: #fff;
 }
 
 .top {
@@ -89,6 +88,20 @@ header button {
 	font-weight: 900;
 	font-family: Fraunces, serif;
 	letter-spacing: .1em;
+	position: relative;
+}
+
+.hero-text::after {
+	position: absolute;
+	content: '';
+	background: url(./images/icon-arrow-down.svg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	top: 5rem;
+	bottom: -11rem;
+	left: 0;
+	right: 0;
+
 }
 
 /* Feature*/
@@ -225,10 +238,6 @@ footer {
 footer,
 footer .hamburger {
 	color: var(--clr-cyan-footer);
-}
-
-.footer-header {
-	displpadding:
 }
 
 .nav-footer > .nav-links {
