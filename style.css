@@ -36,8 +36,11 @@ a {
 	text-decoration: none;
 }
 
-h1 {
+h1,
+.feature-content--link,
+.testimonial-profile--name {
 	font-family: Fraunces, serif;
+	font-weight: 900;
 }
 
 header {
@@ -87,7 +90,6 @@ header {
 
 .feature-content--heading,
 .feature-content--link {
-	font-family: Fraunces, serif;
 	font-weight: 900;
 	color: var(--clr-blue-des);
 }
@@ -148,4 +150,42 @@ header {
 .service--photography {
 	background-image: url(./images/mobile/image-photography.jpg);
 	color: var(--clr-blue-photography);
+}
+
+.testimonials {
+	margin: 3rem auto;
+	padding: 0 2rem;
+}
+
+.testimonials-header {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1rem;
+	color: var(--clr-blue-grayish-1);
+}
+
+.testimonial {
+	margin-top: 3rem;
+	display: grid;
+	place-items: center;
+	gap: 1.5rem;
+	text-align: center;
+}
+
+.testimonial-image { 
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+}
+
+.testimonial-body {
+	color: var(--clr-blue-grayish-3);
+}
+
+.testimonial-profile--name {
+	color: var(--clr-blue-des);
+}
+
+.testominal-profile--designation {
+	color: var(--clr-blue-grayish-1);
 }
