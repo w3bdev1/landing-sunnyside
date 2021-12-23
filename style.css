@@ -43,6 +43,8 @@ h1,
 	font-weight: 900;
 }
 
+/* Header */
+
 header {
 	background: url('./images/mobile/image-header.jpg');
 	background-position: bottom;
@@ -80,6 +82,8 @@ header {
 	font-family: Fraunces, serif;
 	letter-spacing: .1em;
 }
+
+/* Feature*/
 
 .feature-content {
 	display: grid;
@@ -124,6 +128,8 @@ header {
 	background-color: var(--clr-yellow);
 }
 
+/* Service */
+
 .services {
 	margin-top: 1rem;
 }
@@ -151,6 +157,8 @@ header {
 	background-image: url(./images/mobile/image-photography.jpg);
 	color: var(--clr-blue-photography);
 }
+
+/* Testimonial */
 
 .testimonials {
 	margin: 3rem auto;
@@ -188,4 +196,11 @@ header {
 
 .testominal-profile--designation {
 	color: var(--clr-blue-grayish-1);
+}
+
+/* Gallery */
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
