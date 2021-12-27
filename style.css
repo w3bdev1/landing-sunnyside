@@ -69,20 +69,18 @@ header button {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
 .hamburger {
 	background: transparent;
 	border: none;
 	cursor: pointer;
-}
-
-.nav-header {
-	display: none;
+	position: relative;
 }
 
 .nav-header .nav-links li:last-child {
-	background-color: #fff;
+	background-color: var(--clr-yellow);
 	color: var(--clr-blue-des);
 	padding: 1em 2em;
 	border-radius: 20%/50%;
@@ -300,6 +298,9 @@ footer .hamburger {
 		align-items: center;
 		transform: translateY(-10%);
 	}
+	.nav-header .nav-links li:last-child {
+		background-color: #fff;
+	}
 
 	.feature {
 		display: grid;
@@ -356,5 +357,36 @@ footer .hamburger {
 
 	.service {
 		max-width: 50%;
+	}
+}
+
+/* For mobile menu action */
+@media(max-width: 600px) {
+	.nav-header {
+		display: none;
+		z-index: 10;
+		position: absolute;
+		top: 200%;
+		left: 0;
+		right: 0;
+		background: #fff;
+		color: var(--clr-blue-grayish-2);
+	}
+
+	.nav-header ul {
+		display: grid;
+		place-items: center;
+		padding: 2em;
+	}
+
+	.nav-header ul::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		left: calc(100% - 2em);
+		top: -2em;;
+		bottom: 100%;
+		background-color: #fff;
+		clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
 	}
 }
