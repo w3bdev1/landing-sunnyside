@@ -119,6 +119,7 @@ header button {
 	display: grid;
 	gap: clamp(2rem, 5vw - 2em, 7rem);
 	padding: clamp(2rem, 5vw + 1em, 7rem);
+	place-items: center;
 	text-align: center;
 }
 
@@ -324,6 +325,7 @@ footer .hamburger {
 	}
 
 	.feature-content {
+		place-items: start;
 		text-align: left;
 	}
 
@@ -340,10 +342,15 @@ footer .hamburger {
 		flex-grow: 1;
 	}
 
-	.service {
-		background-position: center;
+	.service--graphic {
+		background-image: url(./images/desktop/image-graphic-design.jpg);
+		color: var(--clr-cyan-graphic);
 	}
 
+	.service--photography {
+		background-image: url(./images/desktop/image-photography.jpg);
+		color: var(--clr-blue-photography);
+	}
 	.gallery {
 		display: grid;
 		grid-template-columns: repeat(4,1fr)
